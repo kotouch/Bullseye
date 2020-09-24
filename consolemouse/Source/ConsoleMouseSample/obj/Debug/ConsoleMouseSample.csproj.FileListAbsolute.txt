@@ -1,0 +1,6 @@
+C:\Users\WILES_JOSHUA\Downloads\consolemouse\Binaries\ConsoleMouseSample.exe
+C:\Users\WILES_JOSHUA\Downloads\consolemouse\Binaries\ConsoleMouseSample.pdb
+C:\Users\WILES_JOSHUA\Downloads\consolemouse\Source\ConsoleMouseSample\obj\Debug\ConsoleMouseSample.csprojAssemblyReference.cache
+C:\Users\WILES_JOSHUA\Downloads\consolemouse\Source\ConsoleMouseSample\obj\Debug\ConsoleMouseSample.csproj.CoreCompileInputs.cache
+C:\Users\WILES_JOSHUA\Downloads\consolemouse\Source\ConsoleMouseSample\obj\Debug\ConsoleMouseSample.exe
+C:\Users\WILES_JOSHUA\Downloads\consolemouse\Source\ConsoleMouseSample\obj\Debug\ConsoleMouseSample.pdb
