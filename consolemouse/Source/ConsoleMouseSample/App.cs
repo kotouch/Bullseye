@@ -20,7 +20,7 @@ namespace ConsoleMouseSample {
             Console.WriteLine("Before we start, make sure that your console is in full screen.");
             int findPointX = Convert.ToInt32(Math.Floor(Convert.ToDouble(rand.Next(1, 237))));
             int findPointY = Convert.ToInt32(Math.Floor(Convert.ToDouble(rand.Next(1, 64))));
-
+            Console.WriteLine($"EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE {findPointX} and {findPointY}");
 
 
 
@@ -61,29 +61,33 @@ namespace ConsoleMouseSample {
                             if (record.KeyEvent.wVirtualKeyCode == (int)ConsoleKey.Escape) { return; }
                         } break;
                 }
-                if (Math.Abs(record.MouseEvent.dwMousePosition.X - findPointX) <= 100  || Math.Abs(record.MouseEvent.dwMousePosition.Y - findPointY) <= 100)
+                if ((record.MouseEvent.dwMousePosition.X - findPointX) >= 200  && (record.MouseEvent.dwMousePosition.Y - findPointY) >= 60)
                 {
                     Console.WriteLine("Cold!");
                 }
-                else if (Math.Abs(record.MouseEvent.dwMousePosition.X - findPointX) <= 80)
+                else if ((record.MouseEvent.dwMousePosition.X - findPointX) >= 160 && (record.MouseEvent.dwMousePosition.Y - findPointY) >= 50)
                 {
                     Console.WriteLine("Warmer?");
                 }
-                else if (Math.Abs(record.MouseEvent.dwMousePosition.X - findPointX) <= 60)
+                else if ((record.MouseEvent.dwMousePosition.X - findPointX) >= 120 && (record.MouseEvent.dwMousePosition.Y - findPointY) >= 40)
                 {
                     Console.WriteLine("Warm");
                 }
-                else if (Math.Abs(record.MouseEvent.dwMousePosition.X - findPointX) <= 40)
+                else if ((record.MouseEvent.dwMousePosition.X - findPointX) >= 80 && (record.MouseEvent.dwMousePosition.Y - findPointY) >= 30)
                 {
                     Console.WriteLine("Hot");
                 }
-                else if (Math.Abs(record.MouseEvent.dwMousePosition.X - findPointX) <= 20)
+                else if ((record.MouseEvent.dwMousePosition.X - findPointX) >= 40 && (record.MouseEvent.dwMousePosition.Y - findPointY) >= 20)
                 {
                     Console.WriteLine("RED HOT!");
                 }
-                else if (Math.Abs(record.MouseEvent.dwMousePosition.X - findPointX) <= 10)
+                else if ((record.MouseEvent.dwMousePosition.X - findPointX) >= 20 && (record.MouseEvent.dwMousePosition.Y - findPointY) >= 10)
                 {
                     Console.WriteLine("IT BURNS!!!");
+                }
+                else if (record.MouseEvent.dwMousePosition.X == findPointX && record.MouseEvent.dwMousePosition.Y == findPointY)
+                {
+                    Console.WriteLine("YOU GOT IT!");
                 }
                 else
                 {
