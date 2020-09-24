@@ -17,8 +17,9 @@ namespace ConsoleMouseSample {
             var handle = NativeMethods.GetStdHandle(NativeMethods.STD_INPUT_HANDLE);
             //Josh Code
             Console.WriteLine("Welcome to Bullseye! The objective of the game is to try to hit the bullseye with hot and cold indicators helping.");
-            int findPointX = Convert.ToInt32(Math.Floor(Convert.ToDouble(rand.Next(1, 260))));
-            int findPointY = Convert.ToInt32(Math.Floor(Convert.ToDouble(rand.Next(1, 30))));
+            Console.WriteLine("Before we start, make sure that your console is in full screen.");
+            int findPointX = Convert.ToInt32(Math.Floor(Convert.ToDouble(rand.Next(1, 237))));
+            int findPointY = Convert.ToInt32(Math.Floor(Convert.ToDouble(rand.Next(1, 64))));
 
 
 
@@ -46,7 +47,7 @@ namespace ConsoleMouseSample {
                 Console.SetCursorPosition(0, 0);
                 switch (record.EventType) {
                     case NativeMethods.MOUSE_EVENT: {
-                          
+
                             Console.WriteLine(string.Format("    X ...............:   {0,4:0}  ", record.MouseEvent.dwMousePosition.X));
                             Console.WriteLine(string.Format("    Y ...............:   {0,4:0}  ", record.MouseEvent.dwMousePosition.Y));
                             Console.WriteLine(string.Format("    dwButtonState ...: 0x{0:X4}  ", record.MouseEvent.dwButtonState));
@@ -55,17 +56,41 @@ namespace ConsoleMouseSample {
                         } break;
 
                     case NativeMethods.KEY_EVENT: {
-                         
+
 
                             if (record.KeyEvent.wVirtualKeyCode == (int)ConsoleKey.Escape) { return; }
                         } break;
                 }
-                if (record.MouseEvent.dwMousePosition.X )
-            }
-            while (game)
-            {
+                if (Math.Abs(record.MouseEvent.dwMousePosition.X - findPointX) <= 100  || Math.Abs(record.MouseEvent.dwMousePosition.Y - findPointY) <= 100)
+                {
+                    Console.WriteLine("Cold!");
+                }
+                else if (Math.Abs(record.MouseEvent.dwMousePosition.X - findPointX) <= 80)
+                {
+                    Console.WriteLine("Warmer?");
+                }
+                else if (Math.Abs(record.MouseEvent.dwMousePosition.X - findPointX) <= 60)
+                {
+                    Console.WriteLine("Warm");
+                }
+                else if (Math.Abs(record.MouseEvent.dwMousePosition.X - findPointX) <= 40)
+                {
+                    Console.WriteLine("Hot");
+                }
+                else if (Math.Abs(record.MouseEvent.dwMousePosition.X - findPointX) <= 20)
+                {
+                    Console.WriteLine("RED HOT!");
+                }
+                else if (Math.Abs(record.MouseEvent.dwMousePosition.X - findPointX) <= 10)
+                {
+                    Console.WriteLine("IT BURNS!!!");
+                }
+                else
+                {
 
+                }
             }
+            
         }
 
 
