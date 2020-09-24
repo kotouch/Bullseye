@@ -8,16 +8,17 @@ using System.Runtime.InteropServices;
 
 namespace ConsoleMouseSample {
     class App {
-        Random rand = new Random();
+        
         public static string userInput = "k";
         public static bool gameRunning = true;
         public static string gameDifficulty;
         static void Main(string[] args) {
+            Random rand = new Random();
             var handle = NativeMethods.GetStdHandle(NativeMethods.STD_INPUT_HANDLE);
             //Josh Code
             Console.WriteLine("Welcome to Bullseye! The objective of the game is to try to hit the bullseye with hot and cold indicators helping.");
-            int findPointX
-            int findPointY
+            int findPointX = Convert.ToInt32(Math.Floor(Convert.ToDouble(rand.Next(1, 260))));
+            int findPointY = Convert.ToInt32(Math.Floor(Convert.ToDouble(rand.Next(1, 30))));
 
 
 
