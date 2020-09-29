@@ -1,0 +1,9 @@
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.exe.config
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.exe
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.pdb
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csprojAssemblyReference.cache
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye_V3.Properties.Resources.resources
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.GenerateResource.cache
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.CoreCompileInputs.cache
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.exe
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.pdb
