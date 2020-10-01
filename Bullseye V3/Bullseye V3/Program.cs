@@ -13,6 +13,7 @@ namespace Bullseye_V3
 {
      static class Program
     {
+        public static bool gameRunning = true;
         public static string gameDifficulty = "hard";
         public static string playerName = "boob";
         public static string userInput = "null";
@@ -48,7 +49,7 @@ namespace Bullseye_V3
         {
             Random rand = new Random();
 
-            bool gameRunning = true;
+            gameRunning = true;
             int x = 0;
             int playerX = 0;
             int playerY = 0;
@@ -77,7 +78,7 @@ namespace Bullseye_V3
                 Console.Write("\r{0}                            ", $"{findPointX} {findPointY} The x and y of your cursor: ({playerX}, {playerY}). You're {playerClose}");
 
                 //Console.Clear();
-                if (Math.Abs(playerX - findPointX) >= 1600 || Math.Abs(playerX - findPointX) >= 900)
+                if (Math.Abs(playerX - findPointX) >= 1600 || Math.Abs(playerY - findPointY) >= 900)
                 {
                     if (Math.Abs(playerX - findPointX) > Math.Abs(playerY - findPointY))
                     {
@@ -93,7 +94,7 @@ namespace Bullseye_V3
                         
                     }
                 }
-                else if (Math.Abs(playerX - findPointX) >= 1280 && Math.Abs(playerX - findPointX) >= 720)
+                else if (Math.Abs(playerX - findPointX) >= 1280 && Math.Abs(playerY - findPointY) >= 720)
                 {
                     if (Math.Abs(playerX - findPointX) > Math.Abs(playerY - findPointY))
                     {
@@ -109,7 +110,7 @@ namespace Bullseye_V3
 
                     }
                 }
-                else if (Math.Abs(playerX - findPointX) >= 960 && Math.Abs(playerX - findPointX) >= 540)
+                else if (Math.Abs(playerX - findPointX) >= 960 && Math.Abs(playerY - findPointY) >= 540)
                 { 
                     if (Math.Abs(playerX - findPointX) > Math.Abs(playerY - findPointY))
                     {
@@ -125,7 +126,7 @@ namespace Bullseye_V3
 
                     }
                 }
-                else if (Math.Abs(playerX - findPointX) >= 640 && Math.Abs(playerX - findPointX) >= 360)
+                else if (Math.Abs(playerX - findPointX) >= 640 && Math.Abs(playerY - findPointY) >= 360)
                 {
                     if (Math.Abs(playerX - findPointX) > Math.Abs(playerY - findPointY))
                     {
@@ -141,7 +142,7 @@ namespace Bullseye_V3
 
                     }
                 }
-                else if (Math.Abs(playerX - findPointX) >= 240 && Math.Abs(playerX - findPointX) >= 120)
+                else if (Math.Abs(playerX - findPointX) >= 240 && Math.Abs(playerY - findPointY) >= 120 && Math.Abs(playerX - findPointX) <= 640 && Math.Abs(playerY - findPointY) <= 360)
                 {
                     if (Math.Abs(playerX - findPointX) > Math.Abs(playerY - findPointY))
                     {
@@ -158,7 +159,7 @@ namespace Bullseye_V3
                     }
                     
                 }
-                else if (Math.Abs(playerX - findPointX) >= 40 && Math.Abs(playerX - findPointX) >= 20)
+                else if (Math.Abs(playerX - findPointX) <= 40 && Math.Abs(playerY - findPointY) <= 20)
                 {
                     if (gameDifficulty == "easy")
                     {
@@ -210,7 +211,7 @@ namespace Bullseye_V3
                             ts.Milliseconds / 10);
                             Winner();
                         }
-                        else if (Math.Abs(playerX - findPointX) == 1 || Math.Abs(playerX - findPointX) == 1)
+                        else if (Math.Abs(playerX - findPointX) == 1 && Math.Abs(playerY - findPointY) == 1)
                         {
                             playerClose = "You got it!";
                             gameRunning = false;
@@ -221,7 +222,7 @@ namespace Bullseye_V3
                             ts.Milliseconds / 10);
                             Winner();
                         }
-                        else if (Math.Abs(playerX - findPointX) <= 8 || Math.Abs(playerX - findPointX) <= 8)
+                        else if (Math.Abs(playerX - findPointX) <= 4 && Math.Abs(playerY - findPointY) <= 4)
                         {
                             playerClose = "You got it!";
                             gameRunning = false;
@@ -247,14 +248,24 @@ namespace Bullseye_V3
         static void Winner()
         {
             Console.Clear();
-           
+            gameRunning = false;
             Console.WriteLine($"Wowza, you won! And you did it all in {stopwtchTime} Would you like to record your score to the leaderboard?");
             string wannaPlay = QuadQuestionConfirmation("yes", "y", "no", "n");
             if (wannaPlay == "yes" || wannaPlay == "y")
             {
                 using (StreamWriter writer1 = new StreamWriter("scoreboard.txt", append: true))
                 {
+                    writer1.Write(Environment.NewLine);
+                    //writer1.Write("scoreboard.txt");
+                }
+                using (StreamWriter writer1 = new StreamWriter("scoreboard.txt", append: true))
+                {
                     writer1.Write(playerName.ToString() + " ");
+                    //writer1.Write("scoreboard.txt");
+                }
+                using (StreamWriter writer1 = new StreamWriter("scoreboard.txt", append: true))
+                {
+                    writer1.Write("~~~");
                     //writer1.Write("scoreboard.txt");
                 }
                 using (StreamWriter writer1 = new StreamWriter("scoreboard.txt", append: true))
@@ -264,10 +275,16 @@ namespace Bullseye_V3
                 }
                 using (StreamWriter writer1 = new StreamWriter("scoreboard.txt", append: true))
                 {
+                    writer1.Write("~~~");
+                    //writer1.Write("scoreboard.txt");
+                }
+                using (StreamWriter writer1 = new StreamWriter("scoreboard.txt", append: true))
+                {
                     writer1.Write(stopwtchTime.ToString() + " ");
                     //writer1.Write("scoreboard.txt");
                 }
-               
+                
+
                 Console.WriteLine("Do you want to see the current scoreboard?");
                 wannaPlay = QuadQuestionConfirmation("yes", "y", "no", "n");
                 if (wannaPlay == "yes" || wannaPlay == "y")
@@ -291,9 +308,19 @@ namespace Bullseye_V3
                 // write a line of text to the file
                 
             }
-            else
+            else if (wannaPlay == "no" || wannaPlay == "n")
             {
                 Console.WriteLine("Ahh, a humble man.");
+            }
+            Console.WriteLine("Would you like to play again under the same difficulty and name?");
+            wannaPlay = QuadQuestionConfirmation("yes", "y", "no", "n");
+            if (wannaPlay == "yes" || wannaPlay == "y")
+            {
+                theGame();
+            }
+            else
+            {
+                Console.WriteLine("OK bye");
             }
         }
 
