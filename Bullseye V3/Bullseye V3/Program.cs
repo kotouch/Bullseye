@@ -8,6 +8,8 @@ using System.Threading;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
+using System.Runtime.Remoting.Messaging;
+using Senparc.Weixin;
 
 namespace Bullseye_V3
 {
@@ -35,14 +37,46 @@ namespace Bullseye_V3
             string wannaPlay = QuadQuestionConfirmation("yes", "y", "no", "n");
             if (wannaPlay == "yes" || wannaPlay == "y")
             {
-                Console.WriteLine("What difficulty do you wanna play? Easy, Medium, Hard, or Hardest? FYI: Hardest as of now is the only truely functioning difficulty.");
+                Console.WriteLine("What difficulty do you wanna play? Easy, Medium, Hard, or Hardest?");
                 gameDifficulty = QuadQuestionConfirmation("easy", "medium", "hard", "hardest");
-                theGame();
+                Console.WriteLine("Do you want to see the scoreboard before we begin?");
+                wannaPlay = QuadQuestionConfirmation("yes", "y", "no", "n");
+                if (wannaPlay == "yes" || wannaPlay == "y")
+                {
+                    int counter = 0;
+                    string line;
+
+                    // Read the file and display it line by line.  
+                    System.IO.StreamReader file =
+                        new System.IO.StreamReader("scoreboard.txt");
+                    while ((line = file.ReadLine()) != null)
+                    {
+                        System.Console.WriteLine(line);
+                        counter++;
+                    }
+
+                    file.Close();
+                    System.Threading.Thread.Sleep(5000);
+                    theGame();
+                }
+                else if (wannaPlay == "no" || wannaPlay == "n")
+                {
+                    theGame();
+                }
+                else
+                {
+                    
+                }
             }
-            else
+            else if (wannaPlay == "no" || wannaPlay == "n")
             {
                 Console.Clear();
                 Console.WriteLine("Cya");
+                Environment.Exit(0);
+            }
+            else
+            {
+                Console.WriteLine("EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
             }
         }
         static void theGame()
@@ -64,7 +98,7 @@ namespace Bullseye_V3
             //Form1.UpdateBoxTwo("Wassup");
             var watch = new Stopwatch();
             watch.Start();
-
+            Console.Clear();
             while (gameRunning = true)
             {
 
@@ -74,9 +108,14 @@ namespace Bullseye_V3
                 playerX = Cursor.Position.X;
                 playerY = Cursor.Position.Y;
 
-                
-                Console.Write("\r{0}                            ", $"{findPointX} {findPointY} The x and y of your cursor: ({playerX}, {playerY}). You're {playerClose}");
-
+                if (gameDifficulty == "hard" || gameDifficulty == "hardest")
+                {
+                    Console.Write("\r{0}                            ", $"The x and y of your cursor: ({playerX}, {playerY}). You're {playerClose}");
+                }
+                else if (gameDifficulty == "easy" || gameDifficulty == "medium")
+                {
+                    Console.Write("\r{0}                            ", $"The x and y of your cursor: ({playerX}, {playerY}). You're ({Math.Abs(playerX - findPointX)}, {Math.Abs(playerY - findPointY)}) away.");
+                }
                 //Console.Clear();
                 if (Math.Abs(playerX - findPointX) >= 1600 || Math.Abs(playerY - findPointY) >= 900)
                 {
@@ -94,7 +133,7 @@ namespace Bullseye_V3
                         
                     }
                 }
-                else if (Math.Abs(playerX - findPointX) >= 1280 && Math.Abs(playerY - findPointY) >= 720)
+                else if (Math.Abs(playerX - findPointX) >= 1280 && Math.Abs(playerY - findPointY) >= 720 && Math.Abs(playerX - findPointX) <= 1600 && Math.Abs(playerY - findPointY) <= 900)
                 {
                     if (Math.Abs(playerX - findPointX) > Math.Abs(playerY - findPointY))
                     {
@@ -110,7 +149,7 @@ namespace Bullseye_V3
 
                     }
                 }
-                else if (Math.Abs(playerX - findPointX) >= 960 && Math.Abs(playerY - findPointY) >= 540)
+                else if (Math.Abs(playerX - findPointX) >= 960 && Math.Abs(playerY - findPointY) >= 540 && Math.Abs(playerX - findPointX) <= 1280 && Math.Abs(playerY - findPointY) <= 720)
                 { 
                     if (Math.Abs(playerX - findPointX) > Math.Abs(playerY - findPointY))
                     {
@@ -126,7 +165,7 @@ namespace Bullseye_V3
 
                     }
                 }
-                else if (Math.Abs(playerX - findPointX) >= 640 && Math.Abs(playerY - findPointY) >= 360)
+                else if (Math.Abs(playerX - findPointX) >= 640 && Math.Abs(playerY - findPointY) >= 360 && Math.Abs(playerX - findPointX) <= 960 && Math.Abs(playerY - findPointY) <= 540)
                 {
                     if (Math.Abs(playerX - findPointX) > Math.Abs(playerY - findPointY))
                     {
@@ -142,7 +181,7 @@ namespace Bullseye_V3
 
                     }
                 }
-                else if (Math.Abs(playerX - findPointX) >= 240 && Math.Abs(playerY - findPointY) >= 120 && Math.Abs(playerX - findPointX) <= 640 && Math.Abs(playerY - findPointY) <= 360)
+                else if (Math.Abs(playerX - findPointX) >= 240 && Math.Abs(playerY - findPointY) >= 120 && Math.Abs(playerX - findPointX) <= 640 && Math.Abs(playerY - findPointY) <= 360 && (Math.Abs(playerX - findPointX) <= 40 && Math.Abs(playerY - findPointY) <= 20) != true)
                 {
                     if (Math.Abs(playerX - findPointX) > Math.Abs(playerY - findPointY))
                     {
@@ -170,10 +209,11 @@ namespace Bullseye_V3
                         stopwtchTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
                         ts.Hours, ts.Minutes, ts.Seconds,
                         ts.Milliseconds / 10);
+                        Winner();
                     }
                     else if (gameDifficulty == "medium")
                     {
-                        if (Math.Abs(playerX - findPointX) >= 30 && Math.Abs(playerX - findPointX) >= 15)
+                        if (Math.Abs(playerX - findPointX) >= 30 && Math.Abs(playerY - findPointY) >= 15)
                         {
                             playerClose = "You got it!";
                             gameRunning = false;
@@ -182,11 +222,12 @@ namespace Bullseye_V3
                             stopwtchTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
                             ts.Hours, ts.Minutes, ts.Seconds,
                             ts.Milliseconds / 10);
+                            Winner();
                         }
                     }
                     else if (gameDifficulty == "hard")
                     {
-                        if (Math.Abs(playerX - findPointX) >= 10 && Math.Abs(playerX - findPointX) >= 5)
+                        if (Math.Abs(playerX - findPointX) >= 10 && Math.Abs(playerY - findPointY) >= 5)
                         {
                             playerClose = "You got it!";
                             gameRunning = false;
@@ -302,6 +343,7 @@ namespace Bullseye_V3
                     }
 
                     file.Close();
+
                 }
                 
 
@@ -321,8 +363,11 @@ namespace Bullseye_V3
             else
             {
                 Console.WriteLine("OK bye");
+                Environment.Exit(0);
             }
         }
+
+        
 
         public static string QuadQuestionConfirmation(string optionOne, string optionTwo, string optionThree, string optionFour)
         {
