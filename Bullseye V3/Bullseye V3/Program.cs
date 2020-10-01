@@ -20,13 +20,13 @@ namespace Bullseye_V3
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form1 form1 = new Form1();
-            Application.Run(form1);
+            //Form1 form1 = new Form1();
+            //Application.Run(form1);
             
             int x = 0;
             int playerX;
             int playerY;
-            Form1.UpdateBoxTwo("Wassup");
+            //Form1.UpdateBoxTwo("Wassup");
             while (true)
             {
                 playerX = Cursor.Position.X;
@@ -34,7 +34,7 @@ namespace Bullseye_V3
 
                 Console.WriteLine($"The x of your cursor is: {playerX}.");
                 Console.WriteLine($"The y of your cursor is: {playerY}.");
-                Form1.UpdateBoxOne($"The x of your cursor is: {playerX}.");
+                //Form1.UpdateBoxOne($"The x of your cursor is: {playerX}.");
 
                 x++;
                 if (x % 50 == 0)
