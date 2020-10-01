@@ -74,7 +74,7 @@ namespace Bullseye_V3
                 playerY = Cursor.Position.Y;
 
                 
-                Console.Write("\r{0}                            ", $"The x and y of your cursor: ({playerX}, {playerY}). You're {playerClose}");
+                Console.Write("\r{0}                            ", $"{findPointX} {findPointY} The x and y of your cursor: ({playerX}, {playerY}). You're {playerClose}");
 
                 //Console.Clear();
                 if (Math.Abs(playerX - findPointX) >= 1600 || Math.Abs(playerX - findPointX) >= 900)
@@ -210,6 +210,28 @@ namespace Bullseye_V3
                             ts.Milliseconds / 10);
                             Winner();
                         }
+                        else if (Math.Abs(playerX - findPointX) == 1 || Math.Abs(playerX - findPointX) == 1)
+                        {
+                            playerClose = "You got it!";
+                            gameRunning = false;
+                            watch.Stop();
+                            TimeSpan ts = watch.Elapsed;
+                            stopwtchTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                            ts.Hours, ts.Minutes, ts.Seconds,
+                            ts.Milliseconds / 10);
+                            Winner();
+                        }
+                        else if (Math.Abs(playerX - findPointX) <= 8 || Math.Abs(playerX - findPointX) <= 8)
+                        {
+                            playerClose = "You got it!";
+                            gameRunning = false;
+                            watch.Stop();
+                            TimeSpan ts = watch.Elapsed;
+                            stopwtchTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                            ts.Hours, ts.Minutes, ts.Seconds,
+                            ts.Milliseconds / 10);
+                            Winner();
+                        }
                     }
                 }
 
@@ -232,17 +254,17 @@ namespace Bullseye_V3
             {
                 using (StreamWriter writer1 = new StreamWriter("scoreboard.txt", append: true))
                 {
-                    writer1.WriteLine(playerName.ToString());
+                    writer1.Write(playerName.ToString() + " ");
                     //writer1.Write("scoreboard.txt");
                 }
                 using (StreamWriter writer1 = new StreamWriter("scoreboard.txt", append: true))
                 {
-                    writer1.WriteLine(gameDifficulty.ToString());
+                    writer1.Write(gameDifficulty.ToString() + " ");
                     //writer1.Write("scoreboard.txt");
                 }
                 using (StreamWriter writer1 = new StreamWriter("scoreboard.txt", append: true))
                 {
-                    writer1.WriteLine(stopwtchTime.ToString());
+                    writer1.Write(stopwtchTime.ToString() + " ");
                     //writer1.Write("scoreboard.txt");
                 }
                
