@@ -102,8 +102,8 @@ namespace Bullseye_V3
             while (gameRunning = true)
             {
 
-                
-                
+
+
 
                 playerX = Cursor.Position.X;
                 playerY = Cursor.Position.Y;
@@ -130,7 +130,7 @@ namespace Bullseye_V3
                     else
                     {
                         playerClose = "Cold!";
-                        
+
                     }
                 }
                 else if (Math.Abs(playerX - findPointX) >= 1280 && Math.Abs(playerY - findPointY) >= 720 && Math.Abs(playerX - findPointX) <= 1600 && Math.Abs(playerY - findPointY) <= 900)
@@ -150,7 +150,7 @@ namespace Bullseye_V3
                     }
                 }
                 else if (Math.Abs(playerX - findPointX) >= 960 && Math.Abs(playerY - findPointY) >= 540 && Math.Abs(playerX - findPointX) <= 1280 && Math.Abs(playerY - findPointY) <= 720)
-                { 
+                {
                     if (Math.Abs(playerX - findPointX) > Math.Abs(playerY - findPointY))
                     {
                         playerClose = "Warm. Too far left or right.";
@@ -165,7 +165,7 @@ namespace Bullseye_V3
 
                     }
                 }
-                else if (Math.Abs(playerX - findPointX) >= 640 && Math.Abs(playerY - findPointY) >= 360 && Math.Abs(playerX - findPointX) <= 960 && Math.Abs(playerY - findPointY) <= 540)
+                else if ((Math.Abs(playerX - findPointX) >= 640 || Math.Abs(playerY - findPointY) >= 360) && (Math.Abs(playerX - findPointX) <= 960 || Math.Abs(playerY - findPointY) <= 540))
                 {
                     if (Math.Abs(playerX - findPointX) > Math.Abs(playerY - findPointY))
                     {
@@ -213,7 +213,7 @@ namespace Bullseye_V3
                     }
                     else if (gameDifficulty == "medium")
                     {
-                        if (Math.Abs(playerX - findPointX) >= 30 && Math.Abs(playerY - findPointY) >= 15)
+                        if (Math.Abs(playerX - findPointX) <= 30 && Math.Abs(playerY - findPointY) <= 15)
                         {
                             playerClose = "You got it!";
                             gameRunning = false;
@@ -227,7 +227,7 @@ namespace Bullseye_V3
                     }
                     else if (gameDifficulty == "hard")
                     {
-                        if (Math.Abs(playerX - findPointX) >= 10 && Math.Abs(playerY - findPointY) >= 5)
+                        if (Math.Abs(playerX - findPointX) <= 10 && Math.Abs(playerY - findPointY) <= 10)
                         {
                             playerClose = "You got it!";
                             gameRunning = false;
