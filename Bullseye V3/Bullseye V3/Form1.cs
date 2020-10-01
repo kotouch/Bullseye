@@ -21,7 +21,8 @@ namespace Bullseye_V3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -36,13 +37,16 @@ namespace Bullseye_V3
 
         public static void UpdateBoxOne(string message)
         {
-            textBox1.Text = message;
+            
+            Form1 frm1 = new Form1();
+            frm1.textBox1.Text = message.ToString();
+
         }
 
         public static void UpdateBoxTwo(string message)
         {
-
-            textBox2.Text = message;
+            Form1 frm1 = new Form1();
+            frm1.textBox2.Text = message.ToString();
         }
     }
 }

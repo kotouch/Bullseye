@@ -7,3 +7,13 @@ C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.
 C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.CoreCompileInputs.cache
 C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.exe
 C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.pdb
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.exe.config
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.exe
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.pdb
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csprojAssemblyReference.cache
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye_V3.Form1.resources
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye_V3.Properties.Resources.resources
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.GenerateResource.cache
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.CoreCompileInputs.cache
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.exe
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.pdb
