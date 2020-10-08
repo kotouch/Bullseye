@@ -26,7 +26,6 @@ namespace Bullseye_V3
         [STAThread]
          static void Main()
         {
-            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Form1 form1 = new Form1();
@@ -404,7 +403,6 @@ namespace Bullseye_V3
             {
                 return "error";
             }
-
         }
      }
 }

@@ -29,3 +29,25 @@ C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bul
 C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.NeuChar.xml
 C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.Weixin.xml
 C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.CopyComplete
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.exe.config
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.exe
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.pdb
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.CO2NET.APM.dll
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.CO2NET.dll
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.NeuChar.dll
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.Weixin.dll
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Newtonsoft.Json.xml
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.CO2NET.xml
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.CO2NET.APM.xml
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.NeuChar.xml
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.Weixin.xml
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csprojAssemblyReference.cache
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye_V3.Form1.resources
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye_V3.Properties.Resources.resources
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.GenerateResource.cache
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.CoreCompileInputs.cache
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.CopyComplete
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.exe
+C:\Users\WILES_JOSHUA\Documents\C# Stuff on the C Drive\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.pdb

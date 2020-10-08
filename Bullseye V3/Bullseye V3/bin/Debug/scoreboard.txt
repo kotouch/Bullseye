@@ -5,3 +5,5 @@ josh ~~~hardest ~~~00:00:07.74
 josh ~~~hardest ~~~00:00:20.75 
 josh ~~~hardest ~~~00:00:31.82 
 josh ~~~easy ~~~00:00:00.95 
+josh ~~~hard ~~~00:00:19.00 
+josh ~~~hard ~~~00:00:11.47 
