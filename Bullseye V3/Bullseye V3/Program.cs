@@ -98,7 +98,7 @@ namespace Bullseye_V3
             var watch = new Stopwatch();
             watch.Start();
             Console.Clear();
-            while (gameRunning = true)
+            while (gameRunning == true)
             {
 
 
