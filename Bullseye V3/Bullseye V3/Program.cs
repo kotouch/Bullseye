@@ -329,6 +329,7 @@ namespace Bullseye_V3
                 wannaPlay = QuadQuestionConfirmation("yes", "y", "no", "n");
                 if (wannaPlay == "yes" || wannaPlay == "y")
                 {
+                    Console.Clear();
                     int counter = 0;
                     string line;
 
