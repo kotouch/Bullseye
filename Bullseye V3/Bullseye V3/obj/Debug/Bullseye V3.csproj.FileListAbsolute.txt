@@ -1,0 +1,31 @@
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.exe.config
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.exe
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.pdb
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csprojAssemblyReference.cache
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye_V3.Properties.Resources.resources
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.GenerateResource.cache
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.CoreCompileInputs.cache
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.exe
+C:\Users\Josh\source\repos\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.pdb
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.exe.config
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.exe
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Bullseye V3.pdb
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csprojAssemblyReference.cache
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye_V3.Form1.resources
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye_V3.Properties.Resources.resources
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.GenerateResource.cache
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.CoreCompileInputs.cache
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.exe
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.pdb
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.CO2NET.APM.dll
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.CO2NET.dll
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.NeuChar.dll
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.Weixin.dll
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.CO2NET.xml
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.CO2NET.APM.xml
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.NeuChar.xml
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\bin\Debug\Senparc.Weixin.xml
+C:\Users\Josh\Documents\School Stuff 2020-2021\C# Stuff\Bullseye\Bullseye V3\Bullseye V3\obj\Debug\Bullseye V3.csproj.CopyComplete
